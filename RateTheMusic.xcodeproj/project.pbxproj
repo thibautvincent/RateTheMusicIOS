@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF4819BA1C232698006BE9AF /* apilinks.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF4819B91C232698006BE9AF /* apilinks.plist */; };
+		BF4819BD1C232BAF006BE9AF /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4819BC1C232BAF006BE9AF /* AlbumsViewController.swift */; };
 		BFB209161C230AF9002D54BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB209151C230AF9002D54BD /* AppDelegate.swift */; };
-		BFB209181C230AF9002D54BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB209171C230AF9002D54BD /* ViewController.swift */; };
 		BFB2091B1C230AF9002D54BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB209191C230AF9002D54BD /* Main.storyboard */; };
 		BFB2091D1C230AF9002D54BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB2091C1C230AF9002D54BD /* Assets.xcassets */; };
 		BFB209201C230AF9002D54BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB2091E1C230AF9002D54BD /* LaunchScreen.storyboard */; };
+		BFB2092C1C231635002D54BD /* AlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2092B1C231635002D54BD /* AlbumService.swift */; };
+		BFB2092E1C231882002D54BD /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2092D1C231882002D54BD /* Album.swift */; };
+		BFB209301C2319FD002D54BD /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2092F1C2319FD002D54BD /* Song.swift */; };
+		BFB209321C231A24002D54BD /* Upvote.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB209311C231A24002D54BD /* Upvote.swift */; };
+		BFB209341C231A2C002D54BD /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB209331C231A2C002D54BD /* Comment.swift */; };
+		BFB209381C2321EC002D54BD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB209371C2321EC002D54BD /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF4819B91C232698006BE9AF /* apilinks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apilinks.plist; sourceTree = "<group>"; };
+		BF4819BC1C232BAF006BE9AF /* AlbumsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		BFB209121C230AF9002D54BD /* RateTheMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RateTheMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB209151C230AF9002D54BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFB209171C230AF9002D54BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFB2091A1C230AF9002D54BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFB2091C1C230AF9002D54BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFB2091F1C230AF9002D54BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFB209211C230AF9002D54BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFB2092B1C231635002D54BD /* AlbumService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumService.swift; sourceTree = "<group>"; };
+		BFB2092D1C231882002D54BD /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		BFB2092F1C2319FD002D54BD /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		BFB209311C231A24002D54BD /* Upvote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upvote.swift; sourceTree = "<group>"; };
+		BFB209331C231A2C002D54BD /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		BFB209371C2321EC002D54BD /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,53 @@
 		BFB209141C230AF9002D54BD /* RateTheMusic */ = {
 			isa = PBXGroup;
 			children = (
+				BFB2092A1C231612002D54BD /* Service */,
+				BFB209291C231045002D54BD /* View */,
+				BFB209281C231040002D54BD /* Model */,
+				BFB209271C231038002D54BD /* Controller */,
 				BFB209151C230AF9002D54BD /* AppDelegate.swift */,
-				BFB209171C230AF9002D54BD /* ViewController.swift */,
-				BFB209191C230AF9002D54BD /* Main.storyboard */,
 				BFB2091C1C230AF9002D54BD /* Assets.xcassets */,
 				BFB2091E1C230AF9002D54BD /* LaunchScreen.storyboard */,
 				BFB209211C230AF9002D54BD /* Info.plist */,
 			);
 			path = RateTheMusic;
+			sourceTree = "<group>";
+		};
+		BFB209271C231038002D54BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF4819BC1C232BAF006BE9AF /* AlbumsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BFB209281C231040002D54BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFB2092D1C231882002D54BD /* Album.swift */,
+				BFB2092F1C2319FD002D54BD /* Song.swift */,
+				BFB209311C231A24002D54BD /* Upvote.swift */,
+				BFB209331C231A2C002D54BD /* Comment.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BFB209291C231045002D54BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFB209191C230AF9002D54BD /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BFB2092A1C231612002D54BD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BF4819B91C232698006BE9AF /* apilinks.plist */,
+				BFB2092B1C231635002D54BD /* AlbumService.swift */,
+				BFB209371C2321EC002D54BD /* Result.swift */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +179,7 @@
 				BFB209201C230AF9002D54BD /* LaunchScreen.storyboard in Resources */,
 				BFB2091D1C230AF9002D54BD /* Assets.xcassets in Resources */,
 				BFB2091B1C230AF9002D54BD /* Main.storyboard in Resources */,
+				BF4819BA1C232698006BE9AF /* apilinks.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFB209181C230AF9002D54BD /* ViewController.swift in Sources */,
+				BFB209301C2319FD002D54BD /* Song.swift in Sources */,
+				BF4819BD1C232BAF006BE9AF /* AlbumsViewController.swift in Sources */,
+				BFB209341C231A2C002D54BD /* Comment.swift in Sources */,
+				BFB209321C231A24002D54BD /* Upvote.swift in Sources */,
 				BFB209161C230AF9002D54BD /* AppDelegate.swift in Sources */,
+				BFB2092C1C231635002D54BD /* AlbumService.swift in Sources */,
+				BFB209381C2321EC002D54BD /* Result.swift in Sources */,
+				BFB2092E1C231882002D54BD /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RateTheMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = thibautvincent.RateTheMusic;
@@ -261,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RateTheMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = thibautvincent.RateTheMusic;
@@ -287,6 +349,7 @@
 				BFB209261C230AF9002D54BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
