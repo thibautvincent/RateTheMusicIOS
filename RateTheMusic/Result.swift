@@ -8,5 +8,5 @@
 
 enum Result<T>{
     case Success(T)
-    case Failure(AlbumService.Error)
+    case Failure(Service.Error)
 }
