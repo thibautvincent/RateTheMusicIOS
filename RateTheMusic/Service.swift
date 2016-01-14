@@ -19,27 +19,28 @@ class Service {
         case UnexpectedStatusCode(code: Int)
     }
     
-    
     static let sharedService = Service();
-     var url: NSURL
-     var session: NSURLSession
     
+    private let url: NSURL
+    private let session: NSURLSession
+    var albums: [Album] = []
+    var songs: [Song] = []
     
-     var albums: [Album] = []
-     var songs: [Song] = []
-
     init(){
-        
+         let propertiesPath = NSBundle.mainBundle().pathForResource("apilinks", ofType: "plist")!
+         let properties = NSDictionary(contentsOfFile: propertiesPath)!
+         let baseUrl = properties["baseUrl"] as! String
+         url = NSURL(string: baseUrl)!
+        session = NSURLSession(configuration: NSURLSessionConfiguration.ephemeralSessionConfiguration())
+
     }
     
-    func getSongs(completionHandler: (Result<[Song]>) -> Void) -> NSURLSessionTask {
-        let propertiesPath = NSBundle.mainBundle().pathForResource("apilinks", ofType: "plist")!
-        let properties = NSDictionary(contentsOfFile: propertiesPath)!
-        var baseUrl = properties["songsUrl"] as! String
-        baseUrl += ""
-        url = NSURL(string: baseUrl)!
-        session = NSURLSession(configuration: NSURLSessionConfiguration.ephemeralSessionConfiguration())
-        return session.dataTaskWithURL(url) {
+    func getSongsService(completionHandler: (Result<[Song]>) -> Void) -> NSURLSessionTask{
+        self.songs.removeAll()
+        let songsLink = "https://ratethemusic.herokuapp.com/api/songs"
+        let songsUrl = NSURL(string: songsLink)!
+        let songsSession = NSURLSession(configuration: NSURLSessionConfiguration.ephemeralSessionConfiguration())
+        return songsSession.dataTaskWithURL(songsUrl) {
             data, response, error in
             
             let completionHandler: Result<[Song]> -> Void = {
@@ -69,36 +70,25 @@ class Service {
             do {
                 let json =  try NSJSONSerialization.JSONObjectWithData(data, options:
                     NSJSONReadingOptions.MutableContainers) as! [Dictionary<String,AnyObject>]
-                for album in json {
-                    let id = album["_id"] as! String
-                    let title = album["albumtitle"] as! String
-                    let artist = album["artist"] as! String
-                    let released_at = album["released_at"] as! String
-                    let genre = album["genre"] as! String
-                    let cover = album["cover"] as! String
-                    let description = album["description"] as! String
-                    let songs = album["songs"] as! [Song]
-                    let newAlbum = Album(id: id, albumtitle: title, artist: artist, released_at: released_at, genre: genre, cover: cover, description: description, songs: songs)
-                    self.albums.append(newAlbum)
+                for song in json {
+                    let id = song["_id"] as! String
+                    let title = song["title"] as! String
+                    let albumId = song["album"] as! String
+                    let newSong = Song(id: id, title: title, albumId: albumId)
+                    self.songs.append(newSong)
                 }
-                
-                completionHandler(.Success(self.songs))
-                
             } catch _ as NSError{
-                completionHandler(.Failure(.InvalidJsonData))
+                print("Invalid Jsondata")
             } catch let error as Error {
-                completionHandler(.Failure(error))
+                print(error)
             }
+            completionHandler(.Success(self.songs))
+            
+            
         }
-        
     }
     
     func getAlbums(completionHandler: (Result<[Album]>) -> Void) -> NSURLSessionTask {
-        let propertiesPath = NSBundle.mainBundle().pathForResource("apilinks", ofType: "plist")!
-        let properties = NSDictionary(contentsOfFile: propertiesPath)!
-        let baseUrl = properties["baseUrl"] as! String
-        url = NSURL(string: baseUrl)!
-        session = NSURLSession(configuration: NSURLSessionConfiguration.ephemeralSessionConfiguration())
         return session.dataTaskWithURL(url) {
             data, response, error in
             
@@ -126,6 +116,7 @@ class Service {
                 completionHandler(.Failure(.MissingData))
                 return
             }
+            self.albums.removeAll()
             do {
                 let json =  try NSJSONSerialization.JSONObjectWithData(data, options:
                     NSJSONReadingOptions.MutableContainers) as! [Dictionary<String,AnyObject>]
@@ -137,7 +128,7 @@ class Service {
                     let genre = album["genre"] as! String
                     let cover = album["cover"] as! String
                     let description = album["description"] as! String
-                    let songs = album["songs"] as! [Song]
+                    let songs = album["songs"] as! [String]
                     let newAlbum = Album(id: id, albumtitle: title, artist: artist, released_at: released_at, genre: genre, cover: cover, description: description, songs: songs)
                     self.albums.append(newAlbum)
                 }

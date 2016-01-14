@@ -18,11 +18,7 @@ class AlbumViewController: UITableViewController {
     @IBOutlet weak var genreLabel : UILabel!
     @IBOutlet weak var descriptionTextView : UITextView!
     
-    
-    
-    
-    let album: Album!
-    var songs: [Song] = []
+    var album: Album!
     
     override func viewDidLoad() {
         if let url = NSURL(string: album.cover) {
@@ -30,12 +26,16 @@ class AlbumViewController: UITableViewController {
                 coverImage.image = UIImage(data: data)
             }
         }
-        
         titleLabel!.text = album.albumtitle
         artistLabel!.text = album.artist
         releasedLabel!.text = album.released_at
         genreLabel!.text = album.genre
         descriptionTextView!.text = album.description
         
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let songController = (segue.destinationViewController as! UINavigationController).topViewController as! SongsViewController
+        songController.album = self.album
     }
 }

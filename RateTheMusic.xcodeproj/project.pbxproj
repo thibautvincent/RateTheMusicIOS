@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF23E34E1C484F1600E2D1C6 /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23E34D1C484F1600E2D1C6 /* SongsViewController.swift */; };
 		BF4819BA1C232698006BE9AF /* apilinks.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF4819B91C232698006BE9AF /* apilinks.plist */; };
 		BF4819BD1C232BAF006BE9AF /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4819BC1C232BAF006BE9AF /* AlbumsViewController.swift */; };
 		BFB209161C230AF9002D54BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB209151C230AF9002D54BD /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF23E34D1C484F1600E2D1C6 /* SongsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsViewController.swift; sourceTree = "<group>"; };
 		BF4819B91C232698006BE9AF /* apilinks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apilinks.plist; sourceTree = "<group>"; };
 		BF4819BC1C232BAF006BE9AF /* AlbumsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		BFB209121C230AF9002D54BD /* RateTheMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RateTheMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 				BF4819BC1C232BAF006BE9AF /* AlbumsViewController.swift */,
 				BFCE44581C29875900B7F211 /* AlbumViewController.swift */,
 				BFCE445A1C298A7900B7F211 /* EmptyViewController.swift */,
+				BF23E34D1C484F1600E2D1C6 /* SongsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF23E34E1C484F1600E2D1C6 /* SongsViewController.swift in Sources */,
 				BFB209301C2319FD002D54BD /* Song.swift in Sources */,
 				BF4819BD1C232BAF006BE9AF /* AlbumsViewController.swift in Sources */,
 				BFCE445B1C298A7900B7F211 /* EmptyViewController.swift in Sources */,

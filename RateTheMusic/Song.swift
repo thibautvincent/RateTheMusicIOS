@@ -9,5 +9,13 @@
 import Foundation
 
 class Song {
+    let id: String
+    let title: String
+    let albumId: String
     
+    init(id: String, title: String, albumId: String) {
+        self.id = id
+        self.title = title
+        self.albumId = albumId
+    }
 }
