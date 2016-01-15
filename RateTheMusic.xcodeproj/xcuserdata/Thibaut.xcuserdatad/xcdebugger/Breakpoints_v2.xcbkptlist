@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RateTheMusic/AlbumViewController.swift"
+            timestampString = "472496972.828534"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "AlbumViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RateTheMusic.AlbumViewController.__deallocating_deinit"
+                  moduleName = "RateTheMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Thibaut/Documents/TIN/Modeltraject%203/IOS/Project/RateTheMusic/RateTheMusic/AlbumViewController.swift"
+                  timestampString = "474483402.861952"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RateTheMusic.AlbumViewController.init (RateTheMusic.AlbumViewController.Type)(style : __C.UITableViewStyle) -&gt; RateTheMusic.AlbumViewController"
+                  moduleName = "RateTheMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Thibaut/Documents/TIN/Modeltraject%203/IOS/Project/RateTheMusic/RateTheMusic/AlbumViewController.swift"
+                  timestampString = "474483402.862117"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RateTheMusic.AlbumViewController.init (RateTheMusic.AlbumViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; RateTheMusic.AlbumViewController"
+                  moduleName = "RateTheMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Thibaut/Documents/TIN/Modeltraject%203/IOS/Project/RateTheMusic/RateTheMusic/AlbumViewController.swift"
+                  timestampString = "474483402.862225"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RateTheMusic.AlbumViewController.init (RateTheMusic.AlbumViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;RateTheMusic.AlbumViewController&gt;"
+                  moduleName = "RateTheMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Thibaut/Documents/TIN/Modeltraject%203/IOS/Project/RateTheMusic/RateTheMusic/AlbumViewController.swift"
+                  timestampString = "474483402.862338"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RateTheMusic/AlbumsViewController.swift"
+            timestampString = "474487214.181261"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RateTheMusic/Service.swift"
+            timestampString = "474484206.671486"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "getSongsService(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RateTheMusic/AlbumViewController.swift"
+            timestampString = "474483404.882259"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "AlbumViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RateTheMusic.AlbumViewController.artistLabel.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "RateTheMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Thibaut/Documents/TIN/Modeltraject%203/IOS/Project/RateTheMusic/RateTheMusic/AlbumViewController.swift"
+                  timestampString = "474483404.894014"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RateTheMusic.AlbumViewController.artistLabel.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "RateTheMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Thibaut/Documents/TIN/Modeltraject%203/IOS/Project/RateTheMusic/RateTheMusic/AlbumViewController.swift"
+                  timestampString = "474483404.894184"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RateTheMusic.AlbumViewController.artistLabel.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "RateTheMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Thibaut/Documents/TIN/Modeltraject%203/IOS/Project/RateTheMusic/RateTheMusic/AlbumViewController.swift"
+                  timestampString = "474483404.894306"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RateTheMusic.AlbumViewController.init (RateTheMusic.AlbumViewController.Type)(style : __C.UITableViewStyle) -&gt; RateTheMusic.AlbumViewController"
+                  moduleName = "RateTheMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Thibaut/Documents/TIN/Modeltraject%203/IOS/Project/RateTheMusic/RateTheMusic/AlbumViewController.swift"
+                  timestampString = "474483404.894418"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RateTheMusic.AlbumViewController.init (RateTheMusic.AlbumViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; RateTheMusic.AlbumViewController"
+                  moduleName = "RateTheMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Thibaut/Documents/TIN/Modeltraject%203/IOS/Project/RateTheMusic/RateTheMusic/AlbumViewController.swift"
+                  timestampString = "474483404.894524"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RateTheMusic.AlbumViewController.init (RateTheMusic.AlbumViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;RateTheMusic.AlbumViewController&gt;"
+                  moduleName = "RateTheMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Thibaut/Documents/TIN/Modeltraject%203/IOS/Project/RateTheMusic/RateTheMusic/AlbumViewController.swift"
+                  timestampString = "474483404.894622"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RateTheMusic/Service.swift"
+            timestampString = "474484669.589839"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getSongsService(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
