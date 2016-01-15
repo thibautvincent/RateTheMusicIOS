@@ -57,7 +57,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="6PU-Fi-HJf" kind="show" id="1rb-mG-5OU"/>
+                                    <segue destination="6PU-Fi-HJf" kind="showDetail" id="sBv-5x-7Z2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -73,10 +73,9 @@
             </objects>
             <point key="canvasLocation" x="1333" y="-402"/>
         </scene>
-        <!--Album View Controller-->
+        <!--Album-->
         <scene sceneID="2nR-v5-QhI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gGw-zE-V7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="FX0-j9-lZX" customClass="AlbumViewController" customModule="RateTheMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jeZ-Zd-dtS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -244,7 +243,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="MMZ-lS-cWy" secondAttribute="height" multiplier="225:29" id="tCQ-he-ww3"/>
                                                     </constraints>
-                                                    <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
@@ -298,7 +297,7 @@
                             <outlet property="delegate" destination="FX0-j9-lZX" id="3og-Ic-X1k"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="0aY-bW-1xN"/>
+                    <navigationItem key="navigationItem" title="Album" id="0aY-bW-1xN"/>
                     <connections>
                         <outlet property="artistLabel" destination="beW-CQ-2f5" id="zi6-wS-kh0"/>
                         <outlet property="coverImage" destination="k4u-RH-vpv" id="24h-3S-YBi"/>
@@ -308,8 +307,9 @@
                         <outlet property="titleLabel" destination="LFh-qv-fKo" id="6a7-F7-y6h"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGw-zE-V7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2734" y="-402"/>
+            <point key="canvasLocation" x="2758" y="-414"/>
         </scene>
         <!--Songs-->
         <scene sceneID="Igg-6t-c4E">
@@ -319,6 +319,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="songCell" id="naL-4x-eui">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -334,7 +335,7 @@
                             <outlet property="delegate" destination="EHN-Nn-FHG" id="7e0-57-Xk1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Songs" id="SyS-of-btk"/>
+                    <navigationItem key="navigationItem" title="Songs" id="CUV-pL-qqa" userLabel="Songs"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvg-di-nMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -403,7 +404,6 @@
         <!--Navigation Controller-->
         <scene sceneID="9an-Hc-8H3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nn9-Iw-Hxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6PU-Fi-HJf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aKQ-KP-DpC">
@@ -415,6 +415,7 @@
                         <segue destination="FX0-j9-lZX" kind="relationship" relationship="rootViewController" id="03I-23-EZd"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nn9-Iw-Hxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2044" y="-414"/>
         </scene>

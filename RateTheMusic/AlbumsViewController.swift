@@ -91,11 +91,11 @@ class AlbumsViewController : UITableViewController,UISplitViewControllerDelegate
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let album : Album
         let detailController = (segue.destinationViewController as! UINavigationController).topViewController as! AlbumViewController
-        if isActive() {
-             album = results[tableView.indexPathForSelectedRow!.row]
-        }else {
+        // if isActive() {
+          //   album = results[tableView.indexPathForSelectedRow!.row]
+        //}else {
              album = albums[tableView.indexPathForSelectedRow!.row]
-        }
+        //}
         detailController.album = album
     }
     
